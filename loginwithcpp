@@ -1,0 +1,98 @@
+/ Log-in / Log-out in cpp
+
+#include<iostream>
+#include<String.h>
+using namespace std;
+
+class log
+{
+public:
+void usr(string uname)
+{
+		//cout<<uname;
+}
+
+public:
+void passw(string pname)
+{
+	   //cout<<pname;
+}
+
+public:
+void check(string uname, string pname)
+{
+	string unm,pnm;
+	unm = "pawan";
+	pnm = "1234567";
+// ----------------------------------------------------
+    if(uname==unm)
+	{
+		cout<<"correct username"<<endl;
+	}
+//	else if(uname == "")
+//	{
+//		cout<<"Space is not allowed"<<endl;
+//	}
+	else if(uname!= unm)
+	{
+		cout<<"incorrect username"<<endl;
+	}
+	else
+	{
+		cout<<"Try Again"<<endl;
+	}
+	
+//	---------------------------------------------------
+	if(pname==pnm)
+	{
+		cout<<"correct password"<<endl;
+	}
+//	else if(pname == "")
+//	{
+//		cout<<"Space is not allowed"<<endl;
+//	}
+	else if(pname!= pnm)
+	{
+		cout<<"incorrect password"<<endl;
+	}
+	else
+	{
+		cout<<"Try Again"<<endl;
+	}
+}
+
+public:
+void regi()
+{
+	
+	
+	
+}
+
+
+};
+int main()
+{
+	string uname, pname;
+	int i;
+	cout<<"Enter Username :";
+	cin>>uname;
+	cout<<"Enter Password :";
+	cin>>pname;
+	log l;
+	l.usr(uname);
+	l.passw(pname);
+	
+	cout<<"Choose option"<<endl;
+	cout<<"1-login"<<endl;
+	cout<<"2-Register"<<endl;
+	cin>>i;
+	if (i == 1)
+	{
+		l.check(uname, pname);
+	}
+	else if(i == 2)
+	{
+		l.regi();
+	}
+}
